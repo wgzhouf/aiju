@@ -1,0 +1,34 @@
+/**index.wxss**/
+.aiju-nav{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10%;
+}
+
+.aiju-nav-header{
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10rpx;
+}
+
+.aiju-nav-item{
+  width: 10%;
+  padding: 10rpx;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1rpx solid #d9d9d9;
+}
+
+.aiju-banner{
+  width: 100%;
+}
+
+.aiju-nav-item-hover{
+  background: #e64340;
+  color: white;
+  font-weight: 900;
+
+}

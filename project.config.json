@@ -1,0 +1,13 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxb5dc39d711322153",
+	"projectname": "aiju",
+	"libVersion": "1.7.2",
+	"condition": {}
+}

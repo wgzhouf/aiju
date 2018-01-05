@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<swiper class='aiju-banner' indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        interval="{{interval}}"
+        duration="{{duration}}">
+<block wx:for="{{imgUrls}}" wx:key="id" wx:for-item="imgUrl">
+    <swiper-item>
+        <image style='width:100%' src="{{imgUrl}}"></image>
+    </swiper-item>
+</block>
+</swiper>
+<view class='aiju-nav'>
+    <view class='aiju-nav-header'>产品类目</view>
+    <block wx:for="{{typeofproduct}}" wx:key="id" wx:for-item="type">
+        <view class='aiju-nav-item' hover="true" hover-class='aiju-nav-item-hover'>
+        {{type.type_name_of_product}}
+        </view>
+    </block>
+</view>
