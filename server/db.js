@@ -10,16 +10,9 @@ const sequelize = new Sequelize(config.mysql.db, config.mysql.user, config.mysql
   }
 });
 
-var defineModel = function (tableName, attributs) {
-  return sequelize.define(tableName, attributs, {
-    tableName: tableName,
-    freezeTableName: true,
-    timestamps: false
-  });
-};
-
 module.exports = {
-  defineModel: defineModel,
+  MYSQL_CLIENT: sequelize,
   STRING: Sequelize.STRING,
-  INTEGER: Sequelize.INTEGER
+  INTEGER: Sequelize.INTEGER,
+  SELECT: Sequelize.QueryTypes.SELECT
 };
