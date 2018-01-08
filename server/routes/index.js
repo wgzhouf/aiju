@@ -33,6 +33,10 @@ router.get('/message', controllers.message.get)
 // POST 用来处理微信转发过来的客服消息
 router.post('/message', controllers.message.post)
 
+//---爱菊酒店用品
+//GET 获取产品类目列表
 router.get('/typeofproduct',controllers.typeofproduct.get)
+
+router.get('/image/:pictureurl', controllers.showimage.get)
 
 module.exports = router

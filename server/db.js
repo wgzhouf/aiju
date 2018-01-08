@@ -14,5 +14,8 @@ module.exports = {
   MYSQL_CLIENT: sequelize,
   STRING: Sequelize.STRING,
   INTEGER: Sequelize.INTEGER,
-  SELECT: Sequelize.QueryTypes.SELECT
+  SELECT: Sequelize.QueryTypes.SELECT,
+  INSERT: Sequelize.QueryTypes.INSERT,
+  UPDATE: Sequelize.QueryTypes.UPDATE,
+  DELETE: Sequelize.QueryTypes.DELETE
 };
