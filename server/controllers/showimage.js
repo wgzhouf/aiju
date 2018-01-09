@@ -37,7 +37,7 @@ var showimage = async (ctx, next) => {
 }
 
 async function get(ctx, next) {
-  showimage(ctx,next);
+  await showimage(ctx,next);//调用async方法一定要用await调用
 }
 
 module.exports = {

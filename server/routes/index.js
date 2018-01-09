@@ -1,3 +1,7 @@
+
+
+
+
 /**
  * ajax 服务路由集合
  */
@@ -19,7 +23,8 @@ router.get('/user', validationMiddleware, controllers.user)
 
 // --- 图片上传 Demo --- //
 // 图片上传接口，小程序端可以直接将 url 填入 wx.uploadFile 中
-router.post('/upload', controllers.upload)
+router.get('/upload', controllers.upload.get)
+router.post('/uploadimage', controllers.upload.post)
 
 // --- 信道服务接口 Demo --- //
 // GET  用来响应请求信道地址的
